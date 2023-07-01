@@ -12,6 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.6.1",
-    "grunt-contrib-sass": "^2.0.0"
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }
