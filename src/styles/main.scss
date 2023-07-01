@@ -3,11 +3,22 @@
 @use 'header';
 @use 'hero';
 @use 'spin';
+@use 'rdStation';
 
 body{
-    background-color: cores.$bg;
+    background-color: #F2F2F2;
     width: 100vw;
     height: 100vh;
     color: cores.$corBlack;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: cores.$corGreen;
+    border-radius: 1rem;
 }
