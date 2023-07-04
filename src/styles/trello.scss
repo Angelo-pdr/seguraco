@@ -1,38 +1,31 @@
 .trello{
-    width: 100vw;
+    width: 100%;
     max-height: 100%;
     padding: 5rem 2rem;
-    overflow: hidden;
     color: black;
 
-    @media (max-width: 820px) {
-        padding: 2rem;
+    @media (max-width: 900px) {
+        padding: 1rem;
+        
     }
 
-    @media (max-width: 570px) {
-        padding: 1rem .5rem;
-    }
 
     &__infos{
         width: 58%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 1rem 0px;
 
-        @media (max-width: 821px) {
+        @media (max-width: 900px) {
+            min-width: 100%;
             align-items: center;
-            margin: 0 auto;
-            max-height: 400px;
+            height: 50%;
+            margin-top: 1rem;
         }
 
         img{
             display: block;
             width: 30%;
             height: auto;
-            @media (max-width: 821px) {
+            @media (max-width: 900px) {
                 margin: 0 auto;
             }
         }
@@ -43,22 +36,100 @@
             width: 100%;
             font-weight: 500;
             text-align: justify;
-            @media (max-width: 820px) {
+            @media (max-width: 900px) {
                 text-align: center;
+                font-size: 1rem;
             }
         }
     }
 
-    &__cards{
+
+    .keen-slider{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 2rem 0;
+
+        @media (max-width: 900px) {
+            padding: 1rem 0;
+            max-height: 50%;
+        }
+
+        &__slide {
+            width: 347px;
+            height: 268px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
+            border-radius: 0.5rem;
+            background-color: white;
+
+            @media (max-width: 900px){
+                max-height: 200px;
+            }
+
+            &__cardTop{
+                width: 100%;
+                height: 3rem;
+                border-radius: 0.5rem 0.5rem 0px 0px;
+            }
+            &__cardBottom{
+                padding: 2.25rem 1.5rem 1.5rem;
+                position: relative;
+
+                @media (max-width: 900px){
+                    padding: 1rem;
+                }
+
+                &__img{
+                    width: 3rem;
+                    height: 3rem;
+                    background-color: white;
+                    position: absolute;
+                    top: -1.5rem;
+                    border: 8px solid white;
+                    border-radius: 0.5rem;
+                    @media (max-width: 900px){
+                        top: -2rem;
+                    }
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    @media (max-width: 900px){
+                        width: 15%;
+                        height: auto;
+                    }
+                }
+
+                h3{
+                    font-size: 1.2rem;
+                    margin-bottom: .5rem;
+                    @media (max-width: 900px){
+                        font-size: 1rem;
+                    }
+                }
+
+                p{
+                    font-size: 1rem;
+                    margin-top: .5rem;
+
+                    @media (max-width: 900px){
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
         width: 100%;
         height: 100%;
 
-        &__list{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
+        &__slide{
+
 
             &__cardBody{
                 min-width: 347px;
@@ -103,5 +174,4 @@
                 }
             }
         }
-    }
-}
+*/

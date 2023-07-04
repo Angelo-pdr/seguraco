@@ -9,9 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css"
+  />
     <title>Seguraço EPI</title>
 </head>
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <header class="header">
         <img src="dist/imagens/logo_header.png" alt="">
         <div class="header__overlay"></div>
@@ -227,11 +232,9 @@
                 por um sistema completo, que combine maturidade de gestão 
                 com tecnologia e mobilidade.
                 <br>
-                <br>
                 Agilize a tomada de decisão com todas as informações que o 
                 seu negócio precisa em poucos cliques e leve sua empresa 
                 para outro nível de gestão.
-                <br>
                 <br>
                 Com o Sistema Integrado de Gestão Empresarial (ERP), os 
                 gestores têm em mãos uma ferramenta de automação de processos 
@@ -290,103 +293,108 @@
                 de trabalho para uso pessoal ou de uma equipe.
             </p>
         </div>
-        <div class="trello__cards">
-            <ul class="trello__cards__list">
-                <li class="trello__cards__list__cardBody">
-                    <div class="trello__cards__list__cardBody__cardTop"
-                    style="background-color: rgb(255, 116, 82);"></div>
-                    <div class="trello__cards__list__cardBody__cardBottom">
-                        <div class="trello__cards__list__cardBody__cardBottom__img">
-                            <img src="dist/imagens/trello/pasta.png" alt="">
-                        </div>
-                        <h3>Gerenciamento de projeto</h3>
-                        <p>
-                            Deixe as tarefas organizadas, os prazos em dia e 
-                            os membros do time informados sobre o que há no Trello.
-                        </p>
+        <div id="my-keen-slider" class="keen-slider">
+            <div class="keen-slider__slide number-slide1">
+                <div class="keen-slider__slide__cardTop"
+                style="background-color: rgb(255, 116, 82);"></div>
+                <div class="keen-slider__slide__cardBottom">
+                    <div class="keen-slider__slide__cardBottom__img">
+                        <img src="dist/imagens/trello/pasta.png" alt="">
                     </div>
-                </li>
-                <li class="trello__cards__list__cardBody">
-                    <div class="trello__cards__list__cardBody__cardTop"
-                    style="background-color: rgb(38, 132, 255);"></div>
-                    <div class="trello__cards__list__cardBody__cardBottom">
-                        <div class="trello__cards__list__cardBody__cardBottom__img">
-                            <img src="dist/imagens/trello/megaphone.png" alt="">
-                        </div>
-                        <h3>Reuniões</h3>
-                        <p>
-                            Faça as reuniões do time serem mais produtivas, 
-                            motivadoras e (por que não?) divertidas!.
-                        </p>
+                    <h3>Gerenciamento de projeto</h3>
+                    <p>
+                        Deixe as tarefas organizadas, os prazos em dia e 
+                        os membros do time informados sobre o que há no Trello.
+                    </p>
+                </div>
+            </div>
+            <div class="keen-slider__slide number-slide2">
+                <div class="keen-slider__slide__cardTop"
+                style="background-color: rgb(38, 132, 255);"></div>
+                <div class="keen-slider__slide__cardBottom">
+                    <div class="keen-slider__slide__cardBottom__img">
+                        <img src="dist/imagens/trello/megaphone.png" alt="">
                     </div>
-                </li>
-                <li class="trello__cards__list__cardBody">
-                    <div class="trello__cards__list__cardBody__cardTop"
-                    style="background-color: rgb(87, 217, 163);"></div>
-                    <div class="trello__cards__list__cardBody__cardBottom">
-                        <div class="trello__cards__list__cardBody__cardBottom__img">
-                            <img src="dist/imagens/trello/folha.png" alt="">
-                        </div>
-                        <h3>Integração</h3>
-                        <p>
-                            Agora a integração em uma nova empresa ou em 
-                            um projeto ficou muito fácil com a ajuda do 
-                            layout visual de tarefas, recursos e acompanhamento do progresso do Trello.
-                        </p>
+                    <h3>Reuniões</h3>
+                    <p>
+                        Faça as reuniões do time serem mais produtivas, 
+                        motivadoras e (por que não?) divertidas!.
+                    </p>
+                </div>
+            </div>
+            <div class="keen-slider__slide number-slide3">
+                <div class="keen-slider__slide__cardTop"
+                style="background-color: rgb(87, 217, 163);"></div>
+                <div class="keen-slider__slide__cardBottom">
+                    <div class="keen-slider__slide__cardBottom__img">
+                        <img src="dist/imagens/trello/folha.png" alt="">
                     </div>
-                </li>
-                <li class="trello__cards__list__cardBody">
-                    <div class="trello__cards__list__cardBody__cardTop"
-                    style="background-color: rgb(255, 196, 0);"></div>
-                    <div class="trello__cards__list__cardBody__cardBottom">
-                        <div class="trello__cards__list__cardBody__cardBottom__img">
-                            <img src="dist/imagens/trello/checklists.png" alt="">
-                        </div>
-                        <h3>Gerenciamento de tarefas</h3>
-                        <p>
-                            Agora a integração em uma nova empresa ou em 
-                            um projeto ficou muito fácil com a ajuda do 
-                            layout visual de tarefas, recursos e acompanhamento 
-                            do progresso do Trello.
-                        </p>
+                    <h3>Integração</h3>
+                    <p>
+                        Agora a integração em uma nova empresa ou em 
+                        um projeto ficou muito fácil com a ajuda do 
+                        layout visual de tarefas, recursos e acompanhamento do progresso do Trello.
+                    </p>
+                </div>
+            </div>
+            <div class="keen-slider__slide number-slide4">
+                <div class="keen-slider__slide__cardTop"
+                style="background-color: rgb(255, 196, 0);"></div>
+                <div class="keen-slider__slide__cardBottom">
+                    <div class="keen-slider__slide__cardBottom__img">
+                        <img src="dist/imagens/trello/checklists.png" alt="">
                     </div>
-                </li>
-                <li class="trello__cards__list__cardBody">
-                    <div class="trello__cards__list__cardBody__cardTop"
-                    style="background-color: rgb(0, 199, 229);"></div>
-                    <div class="trello__cards__list__cardBody__cardBottom">
-                        <div class="trello__cards__list__cardBody__cardBottom__img">
-                            <img src="dist/imagens/trello/nuvem.svg" alt="">
-                        </div>
-                        <h3>Brainstorming</h3>
-                        <p>
-                            Solte a criatividade do time e faça 
-                            as ideias serem vistas, usadas em colaboração 
-                            e práticas.
-                        </p>
+                    <h3>Gerenciamento de tarefas</h3>
+                    <p>
+                        Use o Trello para acompanhar, gerenciar, finalizar e 
+                        unir tarefas como se fossem peças de um quebra-cabeça 
+                        e faça os projetos do time serem um sucesso coerente sempre.
+                    </p>
+                </div>
+            </div>
+            <div class="keen-slider__slide number-slide5">
+                <div class="keen-slider__slide__cardTop"
+                style="background-color: rgb(0, 199, 229);"></div>
+                <div class="keen-slider__slide__cardBottom">
+                    <div class="keen-slider__slide__cardBottom__img">
+                        <img src="dist/imagens/trello/nuvem.svg" alt="">
                     </div>
-                </li>
-                <li class="trello__cards__list__cardBody">
-                    <div class="trello__cards__list__cardBody__cardTop"
-                    style="background-color: rgb(249, 156, 219);"></div>
-                    <div class="trello__cards__list__cardBody__cardBottom">
-                        <div class="trello__cards__list__cardBody__cardBottom__img">
-                            <img src="dist/imagens/trello/nuvem.svg" alt="">
-                        </div>
-                        <h3>Centro de recursos</h3>
-                        <p>
-                            Economize tempo com um centro bem projetado 
-                            que ajuda os times a encontrar informações 
-                            mais rápido e com facilidade.
-                        </p>
+                    <h3>Brainstorming</h3>
+                    <p>
+                        Solte a criatividade do time e faça 
+                        as ideias serem vistas, usadas em colaboração 
+                        e práticas.
+                    </p>
+                </div>
+            </div>
+            <div class="keen-slider__slide number-slide6">
+                <div class="keen-slider__slide__cardTop"
+                style="background-color: rgb(249, 156, 219);"></div>
+                <div class="keen-slider__slide__cardBottom">
+                    <div class="keen-slider__slide__cardBottom__img">
+                        <img src="dist/imagens/trello/book.png" alt="">
                     </div>
-                </li>
-            </ul>
+                    <h3>Centro de recursos</h3>
+                    <p>
+                        Economize tempo com um centro bem projetado 
+                        que ajuda os times a encontrar informações 
+                        mais rápido e com facilidade.
+                    </p>
+                </div>
+            </div>   
         </div>
     </section>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+    <script>
+      var slider = new KeenSlider("#my-keen-slider", {
+        slides: {
+          perView: 3,
+          spacing: 15,
+        },
+      })
+      AOS.init();
+    </script>
 </body>
-<script>
-    AOS.init();
-</script>
 </html>
