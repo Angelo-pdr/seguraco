@@ -7,6 +7,13 @@
 @use 'sankhya';
 @use 'trello';
 @use 'processo';
+@use 'sobre';
+@use 'footer';
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
 
 body{
     background-color: #F2F2F2;
@@ -15,6 +22,11 @@ body{
     color: cores.$corBlack;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+    
+}
+.container{
+    width: 100%;
+    height: 100%;
 }
 
 ::-webkit-scrollbar{
